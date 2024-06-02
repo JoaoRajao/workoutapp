@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TreinoFormActivity">
+
+    <EditText
+        android:id="@+id/editText_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/editText_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        android:layout_below="@+id/editText_nome"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_below="@+id/editText_descricao"
+        android:layout_margin="16dp" />
+</RelativeLayout>
