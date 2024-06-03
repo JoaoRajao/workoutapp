@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -5,41 +6,47 @@
     tools:context=".ui.TreinoDetailActivity">
 
     <TextView
-        android:id="@+id/treino_nome"
+        android:id="@+id/treinoNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:layout_margin="16dp" />
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
 
     <TextView
-        android:id="@+id/treino_descricao"
+        android:id="@+id/treinoDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/treino_nome"
-        android:layout_margin="16dp" />
+        android:layout_below="@+id/treinoNome"
+        android:layout_margin="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_exercicios"
+        android:id="@+id/recyclerViewExercicios"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/treino_descricao"
-        android:layout_margin="16dp" />
+        android:layout_height="0dp"
+        android:layout_below="@+id/treinoDescricao"
+        android:layout_above="@id/fabEditTreino"
+        android:layout_margin="16dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_edit_treino"
+        android:id="@+id/fabEditTreino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_edit" />
+        android:src="@drawable/ic_edit"
+        android:tint="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_delete_treino"
+        android:id="@+id/fabDeleteTreino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_delete" />
+        android:src="@drawable/ic_delete"
+        android:tint="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"/>
 </RelativeLayout>
